@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
@@ -6,22 +7,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
   <meta name="robots" content="noindex, nofollow" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>Just a moment...</title>
+  <title>WarezM - Lütfen bekleyiniz..</title>
   <style type="text/css">
     html, body {width: 100%; height: 100%; margin: 0; padding: 0;}
-    body {background-color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 100%;}
-    h1 {font-size: 1.5em; color: #404040; text-align: center;}
-    p {font-size: 1em; color: #404040; text-align: center; margin: 10px 0 0 0;}
+    body {background-color: #212121; color: #fff; font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 1.7em;-webkit-font-smoothing: antialiased;}
+    h1 { text-align: center; font-weight:700; margin: 16px 0; font-size: 32px; color:#fff; line-height: 1.25;}
+    p {font-size: 20px; font-weight: 400; margin: 8px 0;}
+    p, .attribution, {text-align: center;}
     #spinner {margin: 0 auto 30px auto; display: block;}
-    .attribution {margin-top: 20px;}
-    @-webkit-keyframes bubbles { 33%: { -webkit-transform: translateY(10px); transform: translateY(10px); } 66% { -webkit-transform: translateY(-10px); transform: translateY(-10px); } 100% { -webkit-transform: translateY(0); transform: translateY(0); } }
-    @keyframes bubbles { 33%: { -webkit-transform: translateY(10px); transform: translateY(10px); } 66% { -webkit-transform: translateY(-10px); transform: translateY(-10px); } 100% { -webkit-transform: translateY(0); transform: translateY(0); } }
-    .bubbles { background-color: #404040; width:15px; height: 15px; margin:2px; border-radius:100%; -webkit-animation:bubbles 0.6s 0.07s infinite ease-in-out; animation:bubbles 0.6s 0.07s infinite ease-in-out; -webkit-animation-fill-mode:both; animation-fill-mode:both; display:inline-block; }
+    .attribution {margin-top: 32px;}
+    @keyframes fader     { 0% {opacity: 0.2;} 50% {opacity: 1.0;} 100% {opacity: 0.2;} }
+    @-webkit-keyframes fader { 0% {opacity: 0.2;} 50% {opacity: 1.0;} 100% {opacity: 0.2;} }
+    #cf-bubbles > .bubbles { animation: fader 1.6s infinite;}
+    #cf-bubbles > .bubbles:nth-child(2) { animation-delay: .2s;}
+    #cf-bubbles > .bubbles:nth-child(3) { animation-delay: .4s;}
+    .bubbles { background-color: #DB162D; width:20px; height: 20px; margin:2px; border-radius:100%; display:inline-block; }
+    a { color: #E0E0E0; text-decoration: none; -moz-transition: color 0.15s ease; -o-transition: color 0.15s ease; -webkit-transition: color 0.15s ease; transition: color 0.15s ease; }
+    a:hover{color: #DB162D}
+    .attribution{font-size: 16px; line-height: 1.5;}
+    .ray_id{display: block; margin-top: 8px;}
+    #cf-wrapper #challenge-form { padding-top:25px; padding-bottom:25px; }
+    #cf-hcaptcha-container { text-align:center;}
+    #cf-hcaptcha-container iframe { display: inline-block;}
+	      img.brand {
+        display: block;
+        opacity: .95;
+        max-height: 85px;
+        margin: 0 auto;
+        opacity: .80; }
+		
+	      span.loading {
+        text-align: center;
+        display: block;
+        font-size: 45px;
+        margin-top: 45px;
+        color: rgba(250, 250, 250, 0.5); 
+		}
   </style>
-
-        <style>#cf-content{display:block !important;}</style>
-
-<script>
+  <script>
 document.addEventListener("DOMContentLoaded", function () {
     var checkingBrowser = document.querySelector("[data-translate='checking_browser']");
     var processISAuto = document.querySelector("[data-translate='process_is_automatic']");
@@ -31,30 +54,51 @@ document.addEventListener("DOMContentLoaded", function () {
     allowsecs.innerHTML = "5 Saniye içinde yönlendirileceksiniz"
 });
 </script>
-</head>
-<body>
+
+<body>::IM_UNDER_ATTACK_BOX::
+<div style="display: none;">Protected by WarezM</div>
   <table width="100%" height="100%" cellpadding="20">
-    <tr>
+    <tbody><tr>
       <td align="center" valign="middle">
-        <img src="https://forum.warezm.com/styles/warezm-logo.png" width="500px">
           <div class="cf-browser-verification cf-im-under-attack">
-  <noscript><h1 data-translate="turn_on_js" style="color:#bd2426;">Lütfen bu sayfada Javascript kullanılabilir olsun.</h1></noscript>
-  <div id="cf-content" style="display:none">
+  <noscript>
+    <h1 data-translate="turn_on_js" style="color:#bd2426;">Lütfen bu sitede JavaScript'e izin verin.</h1>
+  </noscript>
+  <div id="cf-content" style="display: block;">
+  
+  <script>
+      function load() {
+        setTimeout(function() {
+            $('span.loading').fadeOut('fast').fadeIn('fast');
+            load();
+        }, 0);
+    }
 
-
-     <p style="display:none;  visibility: hidden;">::IM_UNDER_ATTACK_BOX::</p>
+    load();
+  </script>
+    
+<div class="col-sm-12">
+            <span class="loading" style="display: block; opacity: 0.168068;">
+          			<img width="260px" src="https://forum.warezm.com/styles/warezm-logo.png"></img>
+		</span>
+        </div>
+	
+    <h1><span id="domainName" data-translate="checking_browser"></span></h1>
+    
+    <p data-translate="process_is_automatic">Bu işlem otomatiktir. Tarayıcınız kısa süre içinde siteye yönlendirecektir.</p>
+    <p data-translate="allow_5_secs">Lütfen biraz bekleyiniz...</p>
+    <h4>Eğer siteye otomatik yönlendirmezse sayfayı yenileyin. Devam ederse çerezleri sıfırlayıp tekrar sayfayı yenileyin.</h4>
   </div>
-   
-
-          
+  
+</div>
           <div class="attribution">
-            <a href="https://www.warezm.com/" target="_blank" style="font-size: 12px;">DDoS protection by WarezM</a>
+            DDoS protection by <a href="https://ddosarmor.com">DDoS Armor</a>
             <br>
-        
+			<br>
+			<div style="display: none">IP: ::CLIENT_IP:: - Ray ID: ::RAY_ID::</div>
           </div>
       </td>
      
     </tr>
-  </table>
-</body>
-</html>
+  </tbody></table>
+
