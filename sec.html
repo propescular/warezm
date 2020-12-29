@@ -44,7 +44,16 @@
         color: rgba(250, 250, 250, 0.5); 
     }
   </style>
-
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    var checkingBrowser = document.querySelector("[data-translate='checking_browser']");
+    var processISAuto = document.querySelector("[data-translate='process_is_automatic']");
+    var allowsecs = document.querySelector("[data-translate='allow_5_secs']");
+    checkingBrowser.innerHTML = " Önce tarayıcını kontrol ediyorum bi kaç saniye beklemen gerek" // Note: the domain name is always after to this string
+    processISAuto.innerHTML = "Bu sistem her kullanıcıya otomatik olarak gösterilir."
+    allowsecs.innerHTML = "5 Saniye içinde yönlendirileceksiniz"
+});
+</script>
         <style>#cf-content{display:block !important;}</style>
 
 
