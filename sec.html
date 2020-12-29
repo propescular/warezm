@@ -21,7 +21,16 @@
 
         <style>#cf-content{display:block !important;}</style>
 
-
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var checkingBrowser = document.querySelector("[data-translate='checking_browser']");
+    var processISAuto = document.querySelector("[data-translate='process_is_automatic']");
+    var allowsecs = document.querySelector("[data-translate='allow_5_secs']");
+    checkingBrowser.innerHTML = " Önce tarayıcını kontrol ediyorum bi kaç saniye beklemen gerek" // Note: the domain name is always after to this string
+    processISAuto.innerHTML = "Bu sistem her kullanıcıya otomatik olarak gösterilir."
+    allowsecs.innerHTML = "5 Saniye içinde yönlendirileceksiniz"
+});
+</script>
 </head>
 <body>
   <table width="100%" height="100%" cellpadding="20">
@@ -31,16 +40,8 @@
           <div class="cf-browser-verification cf-im-under-attack">
   <noscript><h1 data-translate="turn_on_js" style="color:#bd2426;">Lütfen bu sayfada Javascript kullanılabilir olsun.</h1></noscript>
   <div id="cf-content" style="display:none">
-    
-    <div>
-      <div class="bubbles"></div>
-      <div class="bubbles"></div>
-      <div class="bubbles"></div>
-    </div>
-    <h1> WarezM'e <span data-translate="checking_browser">ulaşmadan önce tarayıcını kontrol ediyoruz bir dk bekle</span></h1>
-    
-    <p data-translate="process_is_automatic">Bu sistem her kullanıcıya otomatik olarak gösterilir.</p>
-    <p data-translate="allow_5_secs">5 Saniye içinde yönlendirileceksiniz&hellip;</p>
+
+
      <p style="display:none;  visibility: hidden;">::IM_UNDER_ATTACK_BOX::</p>
   </div>
    
