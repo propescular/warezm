@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>WarezM - Lütfen bekleyiniz..</title>
   <style type="text/css">
-    html, body {width: 100%; height: 100%; margin: 0; padding: 0;}
+   html, body {width: 100%; height: 100%; margin: 0; padding: 0;}
     body {background-color: #212121; color: #fff; font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 1.7em;-webkit-font-smoothing: antialiased;}
     h1 { text-align: center; font-weight:700; margin: 16px 0; font-size: 32px; color:#fff; line-height: 1.25;}
     p {font-size: 20px; font-weight: 400; margin: 8px 0;}
@@ -29,74 +29,50 @@
     #cf-wrapper #challenge-form { padding-top:25px; padding-bottom:25px; }
     #cf-hcaptcha-container { text-align:center;}
     #cf-hcaptcha-container iframe { display: inline-block;}
-	      img.brand {
+        img.brand {
         display: block;
         opacity: .95;
         max-height: 85px;
         margin: 0 auto;
         opacity: .80; }
-		
-	      span.loading {
+    
+        span.loading {
         text-align: center;
         display: block;
         font-size: 45px;
         margin-top: 45px;
         color: rgba(250, 250, 250, 0.5); 
-		}
-  </style>        <style>#cf-content{display:block !important;}</style>
+    }
+  </style>
 
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-    var checkingBrowser = document.querySelector("[data-translate='checking_browser']");
-    var processISAuto = document.querySelector("[data-translate='process_is_automatic']");
-    var allowsecs = document.querySelector("[data-translate='allow_5_secs']");
-    checkingBrowser.innerHTML = " Önce tarayıcını kontrol ediyorum bi kaç saniye beklemen gerek" // Note: the domain name is always after to this string
-    processISAuto.innerHTML = "Bu sistem her kullanıcıya otomatik olarak gösterilir."
-    allowsecs.innerHTML = "5 Saniye içinde yönlendirileceksiniz"
-});
-</script>
+        <style>#cf-content{display:block !important;}</style>
 
+
+</head>
 <body>
-<div style="display: none;">Protected by WarezM</div>
   <table width="100%" height="100%" cellpadding="20">
-    <tbody><tr>
+    <tr>
       <td align="center" valign="middle">
           <div class="cf-browser-verification cf-im-under-attack">
-  <noscript>
-    <h1 data-translate="turn_on_js" style="color:#bd2426;">Lütfen bu sitede JavaScript'e izin verin.</h1>
-  </noscript>
-  <div id="cf-content" style="display: block;">
-  
-  <script>
-      function load() {
-        setTimeout(function() {
-            $('span.loading').fadeOut('fast').fadeIn('fast');
-            load();
-        }, 0);
-    }
-
-    load();
-  </script>
-    
-<div class="col-sm-12">
-            <span class="loading" style="display: block; opacity: 0.168068;">
-          			<img width="460px" src="https://propescular.github.io/warezm/warezm-logo.png"></img>
-		</span>
-        </div>
-	
-    
-
-    <h4>::IM_UNDER_ATTACK_BOX::</h4>
+  <noscript><h1 data-translate="turn_on_js" style="color:#bd2426;">Please turn JavaScript on and reload the page.</h1></noscript>
+  <div id="cf-content" style="display:none">
+    <img width="460px" src="https://propescular.github.io/warezm/warezm-logo.png"></img>
+   
+    <p>::IM_UNDER_ATTACK_BOX::</p>
   </div>
-  
+   
+
 </div>
+
+          
           <div class="attribution">
-            DDoS protection by <a href="https://www.warezm.com">WarezM</a>
+            DDoS Protected by WarezM
             <br>
-			<br>
+            
           </div>
       </td>
      
     </tr>
-  </tbody></table>
-
+  </table>
+</body>
+</html>
